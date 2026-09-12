@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaikuntapuram Banquets and Caterers — Kondapur, Hyderabad</title>
+<meta name="description" content="Banquet hall and full-service catering in Kondapur, Hyderabad, for weddings, birthdays, anniversaries and family functions. 4.6★ on Google, 156 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1533;
+    --ink-soft:#2A2149;
+    --gold:#C69A44;
+    --gold-pale:#E9CD8F;
+    --maroon:#7C2233;
+    --cream:#F7F1E3;
+    --cream-dim:#EFE4CC;
+    --plum:#241B3D;
+    --line:rgba(198,154,68,0.35);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--plum);
+    font-family:'Work Sans', sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.08;
+    margin:0 0 0.5em;
+    color:var(--plum);
+  }
+  h1{font-size:clamp(2.4rem, 5vw, 4.2rem); font-weight:500;}
+  h2{font-size:clamp(1.8rem, 3.4vw, 2.6rem);}
+  h3{font-size:1.35rem; font-weight:500;}
+  p{margin:0 0 1em; max-width:62ch;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .container{max-width:1160px; margin:0 auto; padding:0 24px;}
+  section{padding:clamp(3.5rem,8vw,6.5rem) 0;}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:0.85em 1.6em;
+    font-family:'Work Sans', sans-serif;
+    font-weight:600;
+    font-size:0.95rem;
+    text-decoration:none;
+    border-radius:2px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .btn-gold{background:var(--gold); color:var(--ink);}
+  .btn-gold:hover{background:var(--gold-pale);}
+  .btn-outline{border-color:var(--gold-pale); color:var(--gold-pale);}
+  .btn-outline:hover{background:rgba(233,205,143,0.1);}
+  .btn-outline-dark{border-color:var(--maroon); color:var(--maroon);}
+  .btn-outline-dark:hover{background:rgba(124,34,51,0.06);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* ---------- Toran (scalloped garland) divider ---------- */
+  .toran{width:100%; height:34px; display:block;}
+  .toran-dark{background:var(--ink);}
+  .toran-cream{background:var(--cream);}
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(27,21,51,0.94);
+    backdrop-filter:blur(6px);
+  }
+  nav.container{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:16px; padding-bottom:16px;
+  }
+  .wordmark{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Fraunces', serif; font-size:1.25rem; color:var(--cream);
+    text-decoration:none; letter-spacing:0.01em;
+  }
+  .wordmark svg{width:26px; height:26px; flex-shrink:0;}
+  .nav-links{display:flex; gap:2rem; list-style:none; margin:0; padding:0;}
+  .nav-links a{color:var(--cream-dim); text-decoration:none; font-size:0.95rem;}
+  .nav-links a:hover{color:var(--gold-pale);}
+  .nav-cta{display:flex; align-items:center; gap:14px;}
+  .nav-toggle{display:none; background:none; border:none; color:var(--cream); font-size:1.6rem; cursor:pointer; padding:4px;}
+
+  @media (max-width:860px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--ink); flex-direction:column; gap:0;
+      max-height:0; overflow:hidden; transition:max-height 0.25s ease;
+    }
+    .nav-links.open{max-height:320px;}
+    .nav-links li{border-top:1px solid rgba(233,205,143,0.14);}
+    .nav-links a{display:block; padding:14px 24px;}
+    .nav-toggle{display:block;}
+    .nav-cta .btn-outline{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:radial-gradient(ellipse 700px 480px at 78% 20%, rgba(198,154,68,0.16), transparent 65%), var(--ink);
+    color:var(--cream);
+    padding-top:clamp(3rem,7vw,5rem);
+    padding-bottom:clamp(3rem,7vw,5rem);
+    overflow:hidden;
+  }
+  .hero .container{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:3rem; align-items:center;
+  }
+  .hero h1{color:var(--cream);}
+  .hero h1 em{font-style:italic; color:var(--gold-pale);}
+  .hero p.lede{color:var(--cream-dim); font-size:1.08rem; max-width:46ch;}
+  .badge{
+    display:inline-flex; align-items:center; gap:8px;
+    border:1px solid var(--line); color:var(--gold-pale);
+    padding:0.4em 0.9em; border-radius:100px; font-size:0.85rem;
+    margin-bottom:1.4rem;
+  }
+  .badge strong{color:var(--gold);}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; margin-top:1.8rem;}
+
+  .arch-frame{
+    position:relative;
+    border-radius:220px 220px 8px 8px;
+    background:linear-gradient(160deg, var(--ink-soft), var(--ink) 70%);
+    border:1px solid var(--line);
+    aspect-ratio:3/4;
+    display:flex; align-items:flex-end; justify-content:center;
+    overflow:hidden;
+  }
+  .arch-frame svg{width:78%; height:auto; margin-bottom:8%;}
+  .arch-frame .glow{
+    position:absolute; top:8%; left:50%; transform:translateX(-50%);
+    width:60%; aspect-ratio:1; border-radius:50%;
+    background:radial-gradient(circle, rgba(233,205,143,0.35), transparent 70%);
+    filter:blur(6px);
+  }
+  @media (max-width:860px){
+    .hero .container{grid-template-columns:1fr;}
+    .arch-frame{max-width:340px; margin:0 auto;}
+  }
+
+  /* ---------- About ---------- */
+  .about .container{
+    display:grid; grid-template-columns:1.3fr 0.9fr; gap:4rem; align-items:start;
+  }
+  .facts{list-style:none; margin:0; padding:0; border-top:1px solid var(--line);}
+  .facts li{
+    padding:1.1rem 0; border-bottom:1px solid var(--line);
+    display:flex; justify-content:space-between; gap:1rem; font-size:0.95rem;
+  }
+  .facts li span:first-child{color:#6a5f85;}
+  .facts li span:last-child{font-weight:600; text-align:right;}
+  @media (max-width:860px){ .about .container{grid-template-columns:1fr;} }
+
+  /* ---------- Occasions ---------- */
+  .occasions{background:var(--ink); color:var(--cream);}
+  .occasions h2{color:var(--cream);}
+  .occasions > .container > p{color:var(--cream-dim);}
+  .occasion-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:1px; background:var(--line); margin-top:2.5rem;
+    border:1px solid var(--line);
+  }
+  .occasion-card{
+    background:var(--ink); padding:2rem 1.8rem;
+    border-top-left-radius:60px;
+  }
+  .occasion-card:nth-child(even){background:var(--ink-soft);}
+  .occasion-card h3{color:var(--gold-pale); font-style:italic;}
+  .occasion-card p{color:var(--cream-dim); font-size:0.94rem; margin-bottom:0;}
+
+  /* ---------- Testimonial ---------- */
+  .testimonial{
+    background:var(--cream-dim);
+    text-align:left;
+  }
+  .testimonial .container{
+    display:grid; grid-template-columns:auto 1fr; gap:3rem; align-items:center;
+  }
+  .rating-block{text-align:center;}
+  .rating-num{font-family:'Fraunces', serif; font-size:5rem; color:var(--maroon); line-height:1;}
+  .stars{color:var(--gold); font-size:1.3rem; letter-spacing:0.15em; margin:0.3em 0;}
+  .rating-block small{display:block; color:#6a5f85; font-size:0.85rem;}
+  blockquote{
+    margin:0; font-family:'Fraunces', serif; font-style:italic;
+    font-size:clamp(1.3rem,2.4vw,1.8rem); color:var(--plum); line-height:1.4;
+  }
+  blockquote footer{
+    margin-top:1rem; font-family:'Work Sans', sans-serif; font-style:normal;
+    font-size:0.9rem; color:#6a5f85;
+  }
+  @media (max-width:700px){ .testimonial .container{grid-template-columns:1fr; text-align:center;} }
+
+  /* ---------- Visit ---------- */
+  .visit .container{display:grid; grid-template-columns:0.9fr 1.1fr; gap:3rem; align-items:start;}
+  .visit-list{list-style:none; margin:1.6rem 0 2rem; padding:0;}
+  .visit-list li{display:flex; gap:14px; padding:0.9rem 0; border-top:1px solid var(--line);}
+  .visit-list li:last-child{border-bottom:1px solid var(--line);}
+  .visit-list .label{width:90px; flex-shrink:0; color:var(--maroon); font-weight:600; font-size:0.85rem;}
+  .map-frame{
+    border-radius:200px 200px 6px 6px; overflow:hidden;
+    border:1px solid var(--line); background:var(--ink-soft);
+  }
+  .map-frame iframe{width:100%; height:420px; border:0; display:block; filter:grayscale(0.15) sepia(0.08);}
+  @media (max-width:860px){ .visit .container{grid-template-columns:1fr;} .map-frame iframe{height:300px;} }
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink); color:var(--cream-dim); padding:3rem 0 2rem;}
+  .footer-grid{display:flex; flex-wrap:wrap; justify-content:space-between; gap:2rem; margin-bottom:2rem;}
+  .footer-grid .wordmark{margin-bottom:0.8rem;}
+  .footer-col h4{font-family:'Work Sans',sans-serif; font-size:0.85rem; color:var(--gold-pale); margin:0 0 0.8rem; font-weight:600;}
+  .footer-col ul{list-style:none; margin:0; padding:0;}
+  .footer-col li{margin-bottom:0.5rem; font-size:0.92rem;}
+  .footer-col a{text-decoration:none; color:var(--cream-dim);}
+  .footer-col a:hover{color:var(--gold-pale);}
+  .footer-bottom{border-top:1px solid var(--line); padding-top:1.4rem; font-size:0.82rem; color:#8b8098; display:flex; flex-wrap:wrap; gap:0.6rem; justify-content:space-between;}
+
+  /* one deliberate entrance */
+  .draw-in{stroke-dasharray:900; stroke-dashoffset:900; animation:draw 1.6s ease forwards 0.2s;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .hero-copy{opacity:0; transform:translateY(14px); animation:rise 0.8s ease forwards 0.5s;}
+  @keyframes rise{to{opacity:1; transform:translateY(0);}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="#top" class="wordmark">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 34V20C6 12 12 6 20 6C28 6 34 12 34 20V34" stroke="#C69A44" stroke-width="2.4"/>
+        <path d="M6 20C9 17 12 20 15 17C18 14 21 20 24 17C27 14 30 20 34 17" stroke="#E9CD8F" stroke-width="1.6" fill="none"/>
+      </svg>
+      Vaikuntapuram
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#occasions">Occasions</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+919888299995">098882 99995</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<svg class="toran toran-dark" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <pattern id="toranTile" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M17 4 C24 10 24 18 17 26 C10 18 10 10 17 4 Z" fill="#C69A44" opacity="0.9"/>
+      <line x1="17" y1="4" x2="17" y2="26" stroke="#7C2233" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="34" fill="url(#toranTile)"/>
+</svg>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="badge">★ <strong>4.6</strong>&nbsp;rating from 156 reviews on Google</span>
+        <h1>Where Kondapur comes to <em>celebrate</em>.</h1>
+        <p class="lede">A banquet hall and full-service catering house on the ground floor of IK Square — spacious halls, a kitchen that doesn't cut corners, and a team that has run this a few hundred times over.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="tel:+919888299995">Call to enquire</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Vaikuntapuram+Banquets+and+Caterers+IK+Square+Kondapur+Hyderabad" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="arch-frame">
+        <div class="glow"></div>
+        <svg viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="draw-in" d="M20 360V180C20 100 80 40 150 40C220 40 280 100 280 180V360"
+                stroke="#C69A44" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 180C34 168 44 190 58 178C72 166 82 190 96 178C110 166 120 190 134 178C144 168 156 168 166 178C180 190 190 166 204 178C218 190 228 166 242 178C256 190 266 168 280 180"
+                stroke="#E9CD8F" stroke-width="1.6" fill="none"/>
+          <circle cx="150" cy="120" r="3" fill="#E9CD8F"/>
+          <line x1="150" y1="60" x2="150" y2="120" stroke="#E9CD8F" stroke-width="1"/>
+          <path d="M150 120c-14 0-24 12-24 26s10 26 24 26s24-12 24-26s-10-26-24-26Z" fill="#7C2233" opacity="0.85"/>
+          <path d="M150 128c-9 0-16 8-16 18s7 18 16 18s16-8 16-18s-7-18-16-18Z" fill="#C69A44"/>
+          <line x1="60" y1="360" x2="60" y2="220" stroke="#E9CD8F" stroke-width="0.8" opacity="0.5"/>
+          <line x1="240" y1="360" x2="240" y2="220" stroke="#E9CD8F" stroke-width="0.8" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div>
+        <h2>A word that means heaven, and a hall that tries to live up to it.</h2>
+        <p>Vaikuntapuram borrows its name from Vaikuntha, the heavenly abode in Hindu tradition — and the hall was built to match the ambition of that name: tall ceilings, warm light, and enough floor space that no one in a large joint family gets left standing at the back.</p>
+        <p>Since opening in Kondapur in 2022, it's grown into one of the area's regular venues for weddings, milestone birthdays, griha pravesams and the kind of big, multi-generation family functions that need a hall built specifically for them — with catering handled in-house from the same kitchen, start to finish.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Rating</span><span>4.6★ from 156 Google reviews</span></li>
+        <li><span>Opened</span><span>2022, Kondapur</span></li>
+        <li><span>What we run</span><span>Banquet hall + in-house catering</span></li>
+        <li><span>Serving</span><span>Hyderabad</span></li>
+        <li><span>Hours</span><span>Daily, until 11 PM</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="occasions" id="occasions">
+    <div class="container">
+      <h2>Occasions we build the day around</h2>
+      <p>Every hall booking comes with catering from our own kitchen, so the food and the room are planned together, not stitched on separately.</p>
+      <div class="occasion-grid">
+        <div class="occasion-card">
+          <h3>Weddings &amp; receptions</h3>
+          <p>Halls laid out with room to spare for baraat, bidaai and everything the guest list needs in between.</p>
+        </div>
+        <div class="occasion-card">
+          <h3>Birthdays</h3>
+          <p>From a first birthday to a sixtieth shanti — decor and a buffet line that suit either end of that range.</p>
+        </div>
+        <div class="occasion-card">
+          <h3>Anniversaries</h3>
+          <p>A quiet dinner for twenty or a full renewal-of-vows evening for two hundred, same attention either way.</p>
+        </div>
+        <div class="occasion-card">
+          <h3>Family functions</h3>
+          <p>Naming ceremonies, griha pravesams, and the functions that only a large joint family throws.</p>
+        </div>
+        <div class="occasion-card">
+          <h3>Cultural gatherings</h3>
+          <p>Festival lunches and community get-togethers, with a stage and sound set up when the occasion calls for one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial" id="reviews">
+    <div class="container">
+      <div class="rating-block">
+        <div class="rating-num">4.6</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <small>156 reviews on Google</small>
+      </div>
+      <blockquote>
+        "Every dish at the buffet tasted fresh and well-seasoned."
+        <footer>— A Google reviewer</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="container">
+      <div>
+        <h2>Find us</h2>
+        <p>We're on the ground floor of IK Square, just off the main Kondapur stretch, near GEM Motors.</p>
+        <ul class="visit-list">
+          <li><span class="label">Address</span><span>Ground Floor, IK Square, near GEM Motors, Kondapur, Raghavendra Colony, Gachibowli, Hyderabad, Telangana 500084</span></li>
+          <li><span class="label">Hours</span><span>Open daily, until 11 PM</span></li>
+          <li><span class="label">Phone</span><span><a href="tel:+919888299995">098882 99995</a></span></li>
+          <li><span class="label">Instagram</span><span><a href="https://www.instagram.com/vaikuntapuramrestaurant/" target="_blank" rel="noopener">@vaikuntapuramrestaurant</a></span></li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-gold" style="background:var(--maroon); color:var(--cream);" href="tel:+919888299995">Call now</a>
+          <a class="btn btn-outline-dark" href="https://www.google.com/maps/search/?api=1&query=Vaikuntapuram+Banquets+and+Caterers+IK+Square+Kondapur+Hyderabad" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=Vaikuntapuram%20Banquets%20and%20Caterers%2C%20IK%20Square%2C%20Kondapur%2C%20Gachibowli%2C%20Hyderabad&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing Vaikuntapuram Banquets and Caterers in Kondapur, Hyderabad"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<svg class="toran toran-dark" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true">
+  <rect width="1200" height="34" fill="url(#toranTile)"/>
+</svg>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="wordmark">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 34V20C6 12 12 6 20 6C28 6 34 12 34 20V34" stroke="#C69A44" stroke-width="2.4"/>
+          </svg>
+          Vaikuntapuram
+        </a>
+        <p style="max-width:34ch; font-size:0.92rem;">Banquet hall &amp; caterers, Kondapur, Hyderabad.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">Our story</a></li>
+          <li><a href="#occasions">Occasions</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+919888299995">098882 99995</a></li>
+          <li><a href="https://www.instagram.com/vaikuntapuramrestaurant/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Vaikuntapuram+Banquets+and+Caterers+IK+Square+Kondapur+Hyderabad" target="_blank" rel="noopener">Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Vaikuntapuram Banquets and Caterers</span>
+      <span>Ground Floor, IK Square, Kondapur, Hyderabad 500084</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>
